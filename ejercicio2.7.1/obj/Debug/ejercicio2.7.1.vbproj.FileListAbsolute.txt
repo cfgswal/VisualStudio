@@ -1,2 +1,3 @@
 C:\Users\wolkw\AppData\Local\Temporary Projects\ejercicio2.7.1\bin\Debug\ejercicio2.7.1.exe.config
 Z:\Ramon\Programacion-mulltimedia\VisualStudio\ejercicio2.7.1\bin\Debug\ejercicio2.7.1.exe.config
+\\vmware-host\Shared Folders\Ramon\Programacion-mulltimedia\VisualStudio\ejercicio2.7.1\bin\Debug\ejercicio2.7.1.exe.config

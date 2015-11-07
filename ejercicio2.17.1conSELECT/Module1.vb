@@ -18,7 +18,7 @@
                 Console.WriteLine("Tiene 30 dias")
             Case 2 And (anio Mod 4 = 0) And (anio Mod 100 <> 0) Or (anio Mod 400 = 0)
                 Console.WriteLine("Tiene 29 dias")
-            Case 2 And (anio Mod 4 <> 0) And (anio Mod 100=0)
+            Case 2 And (anio Mod 4 <> 0) And (anio Mod 100 = 0)
                 Console.WriteLine("Tiene 28 dias")
 
 

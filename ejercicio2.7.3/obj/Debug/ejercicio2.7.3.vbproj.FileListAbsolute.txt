@@ -1,0 +1,2 @@
+C:\Users\wolkw\AppData\Local\Temporary Projects\ejercicio2.7.3\bin\Debug\ejercicio2.7.3.exe.config
+Z:\Ramon\Programacion-mulltimedia\VisualStudio\ejercicio2.7.3\bin\Debug\ejercicio2.7.3.exe.config

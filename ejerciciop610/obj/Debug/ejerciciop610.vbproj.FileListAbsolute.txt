@@ -1,0 +1,18 @@
+C:\Users\wolkw\AppData\Local\Temporary Projects\ejerciciop610\bin\Debug\ejerciciop610.exe.config
+C:\Users\wolkw\AppData\Local\Temporary Projects\ejerciciop610\bin\Debug\ejerciciop610.exe
+C:\Users\wolkw\AppData\Local\Temporary Projects\ejerciciop610\bin\Debug\ejerciciop610.pdb
+C:\Users\wolkw\AppData\Local\Temporary Projects\ejerciciop610\bin\Debug\ejerciciop610.xml
+C:\Users\wolkw\AppData\Local\Temporary Projects\ejerciciop610\obj\Debug\ejerciciop610.vbprojResolveAssemblyReference.cache
+C:\Users\wolkw\AppData\Local\Temporary Projects\ejerciciop610\obj\Debug\ejerciciop610.Resources.resources
+C:\Users\wolkw\AppData\Local\Temporary Projects\ejerciciop610\obj\Debug\ejerciciop610.vbproj.GenerateResource.Cache
+C:\Users\wolkw\AppData\Local\Temporary Projects\ejerciciop610\obj\Debug\ejerciciop610.exe
+C:\Users\wolkw\AppData\Local\Temporary Projects\ejerciciop610\obj\Debug\ejerciciop610.xml
+C:\Users\wolkw\AppData\Local\Temporary Projects\ejerciciop610\obj\Debug\ejerciciop610.pdb
+Z:\Ramon\Programacion-mulltimedia\VisualStudio\ejerciciop610\bin\Debug\ejerciciop610.exe.config
+Z:\Ramon\Programacion-mulltimedia\VisualStudio\ejerciciop610\obj\Debug\ejerciciop610.exe
+Z:\Ramon\Programacion-mulltimedia\VisualStudio\ejerciciop610\obj\Debug\ejerciciop610.xml
+Z:\Ramon\Programacion-mulltimedia\VisualStudio\ejerciciop610\obj\Debug\ejerciciop610.pdb
+\\vmware-host\Shared Folders\Ramon\Programacion-mulltimedia\VisualStudio\ejerciciop610\bin\Debug\ejerciciop610.exe.config
+\\vmware-host\Shared Folders\Ramon\Programacion-mulltimedia\VisualStudio\ejerciciop610\obj\Debug\ejerciciop610.exe
+\\vmware-host\Shared Folders\Ramon\Programacion-mulltimedia\VisualStudio\ejerciciop610\obj\Debug\ejerciciop610.xml
+\\vmware-host\Shared Folders\Ramon\Programacion-mulltimedia\VisualStudio\ejerciciop610\obj\Debug\ejerciciop610.pdb

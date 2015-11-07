@@ -1,0 +1,2 @@
+C:\Users\wolkw\AppData\Local\Temporary Projects\ejerciciop6e20\bin\Debug\ejerciciop6e20.exe.config
+Z:\Ramon\Programacion-mulltimedia\VisualStudio\ejerciciop6e20\bin\Debug\ejerciciop6e20.exe.config

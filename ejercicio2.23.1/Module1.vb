@@ -84,29 +84,9 @@
 
                 Next
 
-
-
         End Select
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         Console.ReadKey()
-
-
-
-
     End Sub
 
 End Module

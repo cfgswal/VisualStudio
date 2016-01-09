@@ -1,0 +1,15 @@
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A02e10_button\bin\Debug\4A02e10_button.exe.config
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A02e10_button\bin\Debug\4A02e10_button.exe
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A02e10_button\bin\Debug\4A02e10_button.pdb
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A02e10_button\bin\Debug\4A02e10_button.xml
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A02e10_button\obj\Debug\4A02e10_button.vbprojResolveAssemblyReference.cache
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A02e10_button\obj\Debug\_4A02e10_button.Form1.resources
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A02e10_button\obj\Debug\_4A02e10_button.Resources.resources
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A02e10_button\obj\Debug\4A02e10_button.vbproj.GenerateResource.Cache
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A02e10_button\obj\Debug\4A02e10_button.exe
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A02e10_button\obj\Debug\4A02e10_button.xml
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A02e10_button\obj\Debug\4A02e10_button.pdb
+\\vmware-host\Shared Folders\Ramon\Repositorio\VisualStudio\4A02e10_button\4A02e10_button\bin\Debug\4A02e10_button.exe.config
+\\vmware-host\Shared Folders\Ramon\Repositorio\VisualStudio\4A02e10_button\4A02e10_button\obj\Debug\4A02e10_button.exe
+\\vmware-host\Shared Folders\Ramon\Repositorio\VisualStudio\4A02e10_button\4A02e10_button\obj\Debug\4A02e10_button.xml
+\\vmware-host\Shared Folders\Ramon\Repositorio\VisualStudio\4A02e10_button\4A02e10_button\obj\Debug\4A02e10_button.pdb

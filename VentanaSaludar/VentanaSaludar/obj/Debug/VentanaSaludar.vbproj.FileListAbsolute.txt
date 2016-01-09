@@ -1,0 +1,11 @@
+C:\Users\wolkw\AppData\Local\Temporary Projects\VentanaSaludar\bin\Debug\VentanaSaludar.exe.config
+C:\Users\wolkw\AppData\Local\Temporary Projects\VentanaSaludar\obj\Debug\VentanaSaludar.Resources.resources
+C:\Users\wolkw\AppData\Local\Temporary Projects\VentanaSaludar\obj\Debug\VentanaSaludar.vbproj.GenerateResource.Cache
+C:\Users\wolkw\AppData\Local\Temporary Projects\VentanaSaludar\obj\Debug\VentanaSaludar.xml
+C:\Users\wolkw\AppData\Local\Temporary Projects\VentanaSaludar\bin\Debug\VentanaSaludar.exe
+C:\Users\wolkw\AppData\Local\Temporary Projects\VentanaSaludar\bin\Debug\VentanaSaludar.pdb
+C:\Users\wolkw\AppData\Local\Temporary Projects\VentanaSaludar\bin\Debug\VentanaSaludar.xml
+C:\Users\wolkw\AppData\Local\Temporary Projects\VentanaSaludar\obj\Debug\VentanaSaludar.Form1.resources
+C:\Users\wolkw\AppData\Local\Temporary Projects\VentanaSaludar\obj\Debug\VentanaSaludar.exe
+C:\Users\wolkw\AppData\Local\Temporary Projects\VentanaSaludar\obj\Debug\VentanaSaludar.pdb
+C:\Users\wolkw\AppData\Local\Temporary Projects\VentanaSaludar\obj\Debug\VentanaSaludar.vbprojResolveAssemblyReference.cache

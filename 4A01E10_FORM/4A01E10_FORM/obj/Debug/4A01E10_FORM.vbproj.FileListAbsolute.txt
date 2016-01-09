@@ -1,0 +1,14 @@
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A01E10_FORM\bin\Debug\4A01E10_FORM.exe.config
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A01E10_FORM\bin\Debug\4A01E10_FORM.exe
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A01E10_FORM\bin\Debug\4A01E10_FORM.pdb
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A01E10_FORM\bin\Debug\4A01E10_FORM.xml
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A01E10_FORM\obj\Debug\_4A01E10_FORM.Form1.resources
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A01E10_FORM\obj\Debug\_4A01E10_FORM.Resources.resources
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A01E10_FORM\obj\Debug\4A01E10_FORM.vbproj.GenerateResource.Cache
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A01E10_FORM\obj\Debug\4A01E10_FORM.exe
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A01E10_FORM\obj\Debug\4A01E10_FORM.xml
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A01E10_FORM\obj\Debug\4A01E10_FORM.pdb
+\\vmware-host\Shared Folders\Ramon\Repositorio\VisualStudio\4A01E10_FORM\4A01E10_FORM\bin\Debug\4A01E10_FORM.exe.config
+\\vmware-host\Shared Folders\Ramon\Repositorio\VisualStudio\4A01E10_FORM\4A01E10_FORM\obj\Debug\4A01E10_FORM.exe
+\\vmware-host\Shared Folders\Ramon\Repositorio\VisualStudio\4A01E10_FORM\4A01E10_FORM\obj\Debug\4A01E10_FORM.xml
+\\vmware-host\Shared Folders\Ramon\Repositorio\VisualStudio\4A01E10_FORM\4A01E10_FORM\obj\Debug\4A01E10_FORM.pdb

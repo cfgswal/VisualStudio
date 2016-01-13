@@ -1,0 +1,11 @@
+C:\Users\wolkw\AppData\Local\Temporary Projects\ConversorMoneda\bin\Debug\ConversorMoneda.exe.config
+C:\Users\wolkw\AppData\Local\Temporary Projects\ConversorMoneda\obj\Debug\ConversorMoneda.Form1.resources
+C:\Users\wolkw\AppData\Local\Temporary Projects\ConversorMoneda\obj\Debug\ConversorMoneda.Form2.resources
+C:\Users\wolkw\AppData\Local\Temporary Projects\ConversorMoneda\obj\Debug\ConversorMoneda.Resources.resources
+C:\Users\wolkw\AppData\Local\Temporary Projects\ConversorMoneda\obj\Debug\ConversorMoneda.vbproj.GenerateResource.Cache
+C:\Users\wolkw\AppData\Local\Temporary Projects\ConversorMoneda\obj\Debug\ConversorMoneda.xml
+C:\Users\wolkw\AppData\Local\Temporary Projects\ConversorMoneda\bin\Debug\ConversorMoneda.exe
+C:\Users\wolkw\AppData\Local\Temporary Projects\ConversorMoneda\bin\Debug\ConversorMoneda.pdb
+C:\Users\wolkw\AppData\Local\Temporary Projects\ConversorMoneda\bin\Debug\ConversorMoneda.xml
+C:\Users\wolkw\AppData\Local\Temporary Projects\ConversorMoneda\obj\Debug\ConversorMoneda.exe
+C:\Users\wolkw\AppData\Local\Temporary Projects\ConversorMoneda\obj\Debug\ConversorMoneda.pdb

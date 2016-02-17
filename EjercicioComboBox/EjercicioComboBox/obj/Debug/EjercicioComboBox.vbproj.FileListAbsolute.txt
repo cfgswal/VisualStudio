@@ -1,0 +1,11 @@
+C:\Users\wolkw\AppData\Local\Temporary Projects\EjercicioComboBox\bin\Debug\EjercicioComboBox.exe.config
+C:\Users\wolkw\AppData\Local\Temporary Projects\EjercicioComboBox\bin\Debug\EjercicioComboBox.exe
+C:\Users\wolkw\AppData\Local\Temporary Projects\EjercicioComboBox\bin\Debug\EjercicioComboBox.pdb
+C:\Users\wolkw\AppData\Local\Temporary Projects\EjercicioComboBox\bin\Debug\EjercicioComboBox.xml
+C:\Users\wolkw\AppData\Local\Temporary Projects\EjercicioComboBox\obj\Debug\EjercicioComboBox.vbprojResolveAssemblyReference.cache
+C:\Users\wolkw\AppData\Local\Temporary Projects\EjercicioComboBox\obj\Debug\EjercicioComboBox.Form1.resources
+C:\Users\wolkw\AppData\Local\Temporary Projects\EjercicioComboBox\obj\Debug\EjercicioComboBox.Resources.resources
+C:\Users\wolkw\AppData\Local\Temporary Projects\EjercicioComboBox\obj\Debug\EjercicioComboBox.vbproj.GenerateResource.Cache
+C:\Users\wolkw\AppData\Local\Temporary Projects\EjercicioComboBox\obj\Debug\EjercicioComboBox.exe
+C:\Users\wolkw\AppData\Local\Temporary Projects\EjercicioComboBox\obj\Debug\EjercicioComboBox.xml
+C:\Users\wolkw\AppData\Local\Temporary Projects\EjercicioComboBox\obj\Debug\EjercicioComboBox.pdb

@@ -1,0 +1,22 @@
+C:\Users\wolkw\AppData\Local\Temporary Projects\ContextMenuStrip\bin\Debug\ContextMenuStrip.exe.config
+C:\Users\wolkw\AppData\Local\Temporary Projects\ContextMenuStrip\bin\Debug\ContextMenuStrip.exe
+C:\Users\wolkw\AppData\Local\Temporary Projects\ContextMenuStrip\bin\Debug\ContextMenuStrip.pdb
+C:\Users\wolkw\AppData\Local\Temporary Projects\ContextMenuStrip\bin\Debug\ContextMenuStrip.xml
+C:\Users\wolkw\AppData\Local\Temporary Projects\ContextMenuStrip\obj\Debug\ContextMenuStrip.vbprojResolveAssemblyReference.cache
+C:\Users\wolkw\AppData\Local\Temporary Projects\ContextMenuStrip\obj\Debug\ContextMenuStrip.Form1.resources
+C:\Users\wolkw\AppData\Local\Temporary Projects\ContextMenuStrip\obj\Debug\ContextMenuStrip.Resources.resources
+C:\Users\wolkw\AppData\Local\Temporary Projects\ContextMenuStrip\obj\Debug\ContextMenuStrip.vbproj.GenerateResource.Cache
+C:\Users\wolkw\AppData\Local\Temporary Projects\ContextMenuStrip\obj\Debug\ContextMenuStrip.exe
+C:\Users\wolkw\AppData\Local\Temporary Projects\ContextMenuStrip\obj\Debug\ContextMenuStrip.xml
+C:\Users\wolkw\AppData\Local\Temporary Projects\ContextMenuStrip\obj\Debug\ContextMenuStrip.pdb
+E:\Repositorio\VisualStudio\ContextMenuStrip\ContextMenuStrip\bin\Debug\ContextMenuStrip.exe.config
+E:\Repositorio\VisualStudio\ContextMenuStrip\ContextMenuStrip\obj\Debug\ContextMenuStrip.exe
+E:\Repositorio\VisualStudio\ContextMenuStrip\ContextMenuStrip\obj\Debug\ContextMenuStrip.xml
+E:\Repositorio\VisualStudio\ContextMenuStrip\ContextMenuStrip\obj\Debug\ContextMenuStrip.pdb
+E:\Repositorio\VisualStudio\ContextMenuStrip\ContextMenuStrip\bin\Debug\ContextMenuStrip.exe
+E:\Repositorio\VisualStudio\ContextMenuStrip\ContextMenuStrip\bin\Debug\ContextMenuStrip.pdb
+E:\Repositorio\VisualStudio\ContextMenuStrip\ContextMenuStrip\bin\Debug\ContextMenuStrip.xml
+E:\Repositorio\VisualStudio\ContextMenuStrip\ContextMenuStrip\obj\Debug\ContextMenuStrip.vbprojResolveAssemblyReference.cache
+E:\Repositorio\VisualStudio\ContextMenuStrip\ContextMenuStrip\obj\Debug\ContextMenuStrip.Form1.resources
+E:\Repositorio\VisualStudio\ContextMenuStrip\ContextMenuStrip\obj\Debug\ContextMenuStrip.Resources.resources
+E:\Repositorio\VisualStudio\ContextMenuStrip\ContextMenuStrip\obj\Debug\ContextMenuStrip.vbproj.GenerateResource.Cache

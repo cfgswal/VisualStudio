@@ -1,0 +1,22 @@
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A04e10_IMPUTBOX\bin\Debug\4A04e10.exe.config
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A04e10_IMPUTBOX\bin\Debug\4A04e10.exe
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A04e10_IMPUTBOX\bin\Debug\4A04e10.pdb
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A04e10_IMPUTBOX\bin\Debug\4A04e10.xml
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A04e10_IMPUTBOX\obj\Debug\4A04e10_IMPUTBOX.vbprojResolveAssemblyReference.cache
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A04e10_IMPUTBOX\obj\Debug\_4A04e10.Form1.resources
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A04e10_IMPUTBOX\obj\Debug\_4A04e10.Resources.resources
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A04e10_IMPUTBOX\obj\Debug\4A04e10_IMPUTBOX.vbproj.GenerateResource.Cache
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A04e10_IMPUTBOX\obj\Debug\4A04e10.exe
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A04e10_IMPUTBOX\obj\Debug\4A04e10.xml
+C:\Users\wolkw\AppData\Local\Temporary Projects\4A04e10_IMPUTBOX\obj\Debug\4A04e10.pdb
+E:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\bin\Debug\4A04e10_IMPUTBOX.exe.config
+E:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\bin\Debug\4A04e10_IMPUTBOX.exe
+E:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\bin\Debug\4A04e10_IMPUTBOX.pdb
+E:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\bin\Debug\4A04e10_IMPUTBOX.xml
+E:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\obj\Debug\4A04e10_IMPUTBOX.vbprojResolveAssemblyReference.cache
+E:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\obj\Debug\_4A04e10.Form1.resources
+E:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\obj\Debug\_4A04e10.Resources.resources
+E:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\obj\Debug\4A04e10_IMPUTBOX.vbproj.GenerateResource.Cache
+E:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\obj\Debug\4A04e10_IMPUTBOX.exe
+E:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\obj\Debug\4A04e10_IMPUTBOX.xml
+E:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\obj\Debug\4A04e10_IMPUTBOX.pdb

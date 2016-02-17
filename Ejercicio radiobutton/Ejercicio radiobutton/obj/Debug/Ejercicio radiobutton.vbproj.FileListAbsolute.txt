@@ -1,0 +1,2 @@
+\\vmware-host\Shared Folders\Ramon\Repositorio\VisualStudio\Ejercicio radiobutton\Ejercicio radiobutton\bin\Debug\Ejercicio radiobutton.exe.config
+E:\Repositorio\VisualStudio\Ejercicio radiobutton\Ejercicio radiobutton\bin\Debug\Ejercicio radiobutton.exe.config

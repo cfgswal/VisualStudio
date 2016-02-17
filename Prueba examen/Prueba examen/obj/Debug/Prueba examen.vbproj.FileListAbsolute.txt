@@ -1,0 +1,23 @@
+c:\users\ramon\documents\visual studio 2015\Projects\Prueba examen\Prueba examen\bin\Debug\Prueba examen.exe.config
+c:\users\ramon\documents\visual studio 2015\Projects\Prueba examen\Prueba examen\bin\Debug\Prueba examen.exe
+c:\users\ramon\documents\visual studio 2015\Projects\Prueba examen\Prueba examen\bin\Debug\Prueba examen.pdb
+c:\users\ramon\documents\visual studio 2015\Projects\Prueba examen\Prueba examen\bin\Debug\Prueba examen.xml
+c:\users\ramon\documents\visual studio 2015\Projects\Prueba examen\Prueba examen\obj\Debug\Prueba examen.vbprojResolveAssemblyReference.cache
+c:\users\ramon\documents\visual studio 2015\Projects\Prueba examen\Prueba examen\obj\Debug\Prueba_examen.Form1.resources
+c:\users\ramon\documents\visual studio 2015\Projects\Prueba examen\Prueba examen\obj\Debug\Prueba_examen.Resources.resources
+c:\users\ramon\documents\visual studio 2015\Projects\Prueba examen\Prueba examen\obj\Debug\Prueba examen.vbproj.GenerateResource.Cache
+c:\users\ramon\documents\visual studio 2015\Projects\Prueba examen\Prueba examen\obj\Debug\Prueba examen.exe
+c:\users\ramon\documents\visual studio 2015\Projects\Prueba examen\Prueba examen\obj\Debug\Prueba examen.xml
+c:\users\ramon\documents\visual studio 2015\Projects\Prueba examen\Prueba examen\obj\Debug\Prueba examen.pdb
+D:\Repositorio\VisualStudio\Prueba examen\Prueba examen\bin\Debug\Prueba examen.exe.config
+D:\Repositorio\VisualStudio\Prueba examen\Prueba examen\obj\Debug\Prueba examen.exe
+D:\Repositorio\VisualStudio\Prueba examen\Prueba examen\obj\Debug\Prueba examen.xml
+D:\Repositorio\VisualStudio\Prueba examen\Prueba examen\obj\Debug\Prueba examen.pdb
+D:\Repositorio\VisualStudio\Prueba examen\Prueba examen\bin\Debug\Prueba examen.exe
+D:\Repositorio\VisualStudio\Prueba examen\Prueba examen\bin\Debug\Prueba examen.pdb
+D:\Repositorio\VisualStudio\Prueba examen\Prueba examen\bin\Debug\Prueba examen.xml
+D:\Repositorio\VisualStudio\Prueba examen\Prueba examen\obj\Debug\Prueba examen.vbprojResolveAssemblyReference.cache
+D:\Repositorio\VisualStudio\Prueba examen\Prueba examen\obj\Debug\Prueba_examen.Form1.resources
+D:\Repositorio\VisualStudio\Prueba examen\Prueba examen\obj\Debug\Prueba_examen.Resources.resources
+D:\Repositorio\VisualStudio\Prueba examen\Prueba examen\obj\Debug\Prueba examen.vbproj.GenerateResource.Cache
+D:\Repositorio\VisualStudio\Prueba examen\Prueba examen\obj\Debug\Prueba_examen.Form2.resources

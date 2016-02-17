@@ -1,0 +1,15 @@
+C:\Users\wolkw\AppData\Local\Temporary Projects\CelsiusaFarenheit\bin\Debug\CelsiusaFarenheit.exe.config
+C:\Users\wolkw\AppData\Local\Temporary Projects\CelsiusaFarenheit\bin\Debug\CelsiusaFarenheit.exe
+C:\Users\wolkw\AppData\Local\Temporary Projects\CelsiusaFarenheit\bin\Debug\CelsiusaFarenheit.pdb
+C:\Users\wolkw\AppData\Local\Temporary Projects\CelsiusaFarenheit\bin\Debug\CelsiusaFarenheit.xml
+C:\Users\wolkw\AppData\Local\Temporary Projects\CelsiusaFarenheit\obj\Debug\CelsiusaFarenheit.vbprojResolveAssemblyReference.cache
+C:\Users\wolkw\AppData\Local\Temporary Projects\CelsiusaFarenheit\obj\Debug\CelsiusaFarenheit.Form1.resources
+C:\Users\wolkw\AppData\Local\Temporary Projects\CelsiusaFarenheit\obj\Debug\CelsiusaFarenheit.Resources.resources
+C:\Users\wolkw\AppData\Local\Temporary Projects\CelsiusaFarenheit\obj\Debug\CelsiusaFarenheit.vbproj.GenerateResource.Cache
+C:\Users\wolkw\AppData\Local\Temporary Projects\CelsiusaFarenheit\obj\Debug\CelsiusaFarenheit.exe
+C:\Users\wolkw\AppData\Local\Temporary Projects\CelsiusaFarenheit\obj\Debug\CelsiusaFarenheit.xml
+C:\Users\wolkw\AppData\Local\Temporary Projects\CelsiusaFarenheit\obj\Debug\CelsiusaFarenheit.pdb
+E:\Repositorio\VisualStudio\CelsiusaFarenheit\CelsiusaFarenheit\bin\Debug\CelsiusaFarenheit.exe.config
+E:\Repositorio\VisualStudio\CelsiusaFarenheit\CelsiusaFarenheit\obj\Debug\CelsiusaFarenheit.exe
+E:\Repositorio\VisualStudio\CelsiusaFarenheit\CelsiusaFarenheit\obj\Debug\CelsiusaFarenheit.xml
+E:\Repositorio\VisualStudio\CelsiusaFarenheit\CelsiusaFarenheit\obj\Debug\CelsiusaFarenheit.pdb

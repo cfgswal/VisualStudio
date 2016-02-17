@@ -1,0 +1,11 @@
+E:\Repositorio\VisualStudio\Medallero\Medallero\bin\Debug\Medallero.exe.config
+E:\Repositorio\VisualStudio\Medallero\Medallero\bin\Debug\Medallero.exe
+E:\Repositorio\VisualStudio\Medallero\Medallero\bin\Debug\Medallero.pdb
+E:\Repositorio\VisualStudio\Medallero\Medallero\bin\Debug\Medallero.xml
+E:\Repositorio\VisualStudio\Medallero\Medallero\obj\Debug\Medallero.vbprojResolveAssemblyReference.cache
+E:\Repositorio\VisualStudio\Medallero\Medallero\obj\Debug\WindowsApplication1.Form1.resources
+E:\Repositorio\VisualStudio\Medallero\Medallero\obj\Debug\WindowsApplication1.Resources.resources
+E:\Repositorio\VisualStudio\Medallero\Medallero\obj\Debug\Medallero.vbproj.GenerateResource.Cache
+E:\Repositorio\VisualStudio\Medallero\Medallero\obj\Debug\Medallero.exe
+E:\Repositorio\VisualStudio\Medallero\Medallero\obj\Debug\Medallero.xml
+E:\Repositorio\VisualStudio\Medallero\Medallero\obj\Debug\Medallero.pdb

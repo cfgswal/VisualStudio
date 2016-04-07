@@ -5,7 +5,7 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim con As New SqlConnection(My.Settings.c)
+        Dim con As New SqlConnection(My.Settings.conexion)
 
         Dim sql As String = "select cod_prod, nombre, existencia from productos"
         Dim cmd As New SqlCommand(sql, con)

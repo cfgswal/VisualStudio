@@ -57,7 +57,7 @@ Partial Class Form1
         'RichTextBox1
         '
         Me.RichTextBox1.Location = New System.Drawing.Point(14, 36)
-        Me.RichTextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RichTextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.Size = New System.Drawing.Size(701, 555)
         Me.RichTextBox1.TabIndex = 0
@@ -86,7 +86,7 @@ Partial Class Form1
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(96, 22)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'EdicionToolStripMenuItem
@@ -99,19 +99,19 @@ Partial Class Form1
         'CopiarToolStripMenuItem
         '
         Me.CopiarToolStripMenuItem.Name = "CopiarToolStripMenuItem"
-        Me.CopiarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CopiarToolStripMenuItem.Size = New System.Drawing.Size(109, 22)
         Me.CopiarToolStripMenuItem.Text = "Copiar"
         '
         'CortarToolStripMenuItem
         '
         Me.CortarToolStripMenuItem.Name = "CortarToolStripMenuItem"
-        Me.CortarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CortarToolStripMenuItem.Size = New System.Drawing.Size(109, 22)
         Me.CortarToolStripMenuItem.Text = "Cortar"
         '
         'PegarToolStripMenuItem
         '
         Me.PegarToolStripMenuItem.Name = "PegarToolStripMenuItem"
-        Me.PegarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PegarToolStripMenuItem.Size = New System.Drawing.Size(109, 22)
         Me.PegarToolStripMenuItem.Text = "Pegar"
         '
         'OpcionesToolStripMenuItem
@@ -125,7 +125,7 @@ Partial Class Form1
         '
         Me.TextoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FuenteToolStripMenuItem, Me.TamañoToolStripMenuItem, Me.ColoresToolStripMenuItem})
         Me.TextoToolStripMenuItem.Name = "TextoToolStripMenuItem"
-        Me.TextoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.TextoToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
         Me.TextoToolStripMenuItem.Text = "Texto"
         '
         'FuenteToolStripMenuItem
@@ -253,7 +253,7 @@ Partial Class Form1
         'ACercaDeToolStripMenuItem
         '
         Me.ACercaDeToolStripMenuItem.Name = "ACercaDeToolStripMenuItem"
-        Me.ACercaDeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ACercaDeToolStripMenuItem.Size = New System.Drawing.Size(138, 22)
         Me.ACercaDeToolStripMenuItem.Text = "A cerca de..."
         '
         'Form1
@@ -264,7 +264,7 @@ Partial Class Form1
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.MenuStrip1.ResumeLayout(False)

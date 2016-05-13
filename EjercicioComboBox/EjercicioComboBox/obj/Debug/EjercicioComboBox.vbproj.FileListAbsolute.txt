@@ -9,3 +9,7 @@ C:\Users\wolkw\AppData\Local\Temporary Projects\EjercicioComboBox\obj\Debug\Ejer
 C:\Users\wolkw\AppData\Local\Temporary Projects\EjercicioComboBox\obj\Debug\EjercicioComboBox.exe
 C:\Users\wolkw\AppData\Local\Temporary Projects\EjercicioComboBox\obj\Debug\EjercicioComboBox.xml
 C:\Users\wolkw\AppData\Local\Temporary Projects\EjercicioComboBox\obj\Debug\EjercicioComboBox.pdb
+D:\Repositorio\VisualStudio\EjercicioComboBox\EjercicioComboBox\bin\Debug\EjercicioComboBox.exe.config
+D:\Repositorio\VisualStudio\EjercicioComboBox\EjercicioComboBox\obj\Debug\EjercicioComboBox.exe
+D:\Repositorio\VisualStudio\EjercicioComboBox\EjercicioComboBox\obj\Debug\EjercicioComboBox.xml
+D:\Repositorio\VisualStudio\EjercicioComboBox\EjercicioComboBox\obj\Debug\EjercicioComboBox.pdb

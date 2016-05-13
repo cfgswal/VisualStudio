@@ -262,4 +262,12 @@
             MsgBox("Mete un valor")
         End If
     End Sub
+
+    Private Sub comboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles comboBox1.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub textBox15_TextChanged(sender As Object, e As EventArgs) Handles textBox15.TextChanged
+
+    End Sub
 End Class

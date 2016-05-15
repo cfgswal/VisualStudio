@@ -14,4 +14,19 @@
         Dim se As SocioEliminar = New SocioEliminar
         se.Show()
     End Sub
+
+    Private Sub AÑADIRToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles AÑADIRToolStripMenuItem1.Click
+        Dim ap As ProductoAnadir = New ProductoAnadir
+        ap.Show()
+    End Sub
+
+    Private Sub MODIFICARToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles MODIFICARToolStripMenuItem1.Click
+        Dim mp As ProductoModif = New ProductoModif
+        mp.Show()
+    End Sub
+
+    Private Sub ELIMINARToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ELIMINARToolStripMenuItem1.Click
+        Dim pe As ProductoEliminar = New ProductoEliminar
+        pe.Show()
+    End Sub
 End Class

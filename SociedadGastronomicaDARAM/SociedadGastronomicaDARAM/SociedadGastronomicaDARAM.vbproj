@@ -127,6 +127,12 @@
     <EmbeddedResource Include="SocioAnadir.resx">
       <DependentUpon>SocioAnadir.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SocioEliminar.resx">
+      <DependentUpon>SocioEliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SocioModif.resx">
+      <DependentUpon>SocioModif.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\Application.myapp">

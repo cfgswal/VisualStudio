@@ -186,4 +186,26 @@ Public Class BaseDatos
         Return True
 
     End Function
+
+    Public Function insertarPedido(ByRef pedido As PedidoAnadir) As Boolean
+
+        Dim cmd As SqlCommand = New SqlCommand("SP_REGISTRAR_PEDIDO", con)
+        cmd.Parameters.Add("id_pedido", SqlDbType.VarChar, 10).Value = pedido.TextBox1.Text
+
+        cmd.Parameters.Add("precio", SqlDbType.Int).Value = pedido.TextBox2.Text
+        cmd.Parameters.Add("importe", SqlDbType.Int).Value = pedido.TextBox3.Text
+        cmd.Parameters.Add("fecha_pedido", SqlDbType.Date).Value = pedido.DateTimePicker1.Text
+
+        cmd.CommandType = CommandType.StoredProcedure
+        cmd.ExecuteNonQuery()
+        con.Close()
+        MsgBox("Nuevo pedido añadido a la base de datos")
+        pedido.TextBox1.Clear()
+        pedido.TextBox2.Clear()
+        pedido.ListBox1.Items.Clear()
+
+
+        Return True
+
+    End Function
 End Class

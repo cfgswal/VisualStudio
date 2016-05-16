@@ -1,3 +1,3 @@
-﻿Public Class PeididoListado
+﻿Public Class PedidoListado
 
 End Class

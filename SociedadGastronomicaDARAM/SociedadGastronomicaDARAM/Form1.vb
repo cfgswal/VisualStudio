@@ -29,4 +29,14 @@
         Dim pe As ProductoEliminar = New ProductoEliminar
         pe.Show()
     End Sub
+
+    Private Sub AÑADIRToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles AÑADIRToolStripMenuItem2.Click
+        Dim pa As PedidoAnadir = New PedidoAnadir
+        pa.Show()
+    End Sub
+
+    Private Sub LISTADOToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LISTADOToolStripMenuItem.Click
+        Dim pl As PedidoListado = New PedidoListado
+        pl.Show()
+    End Sub
 End Class

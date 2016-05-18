@@ -20,3 +20,14 @@ E:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\obj\Debug\4A04e10_
 E:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\obj\Debug\4A04e10_IMPUTBOX.exe
 E:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\obj\Debug\4A04e10_IMPUTBOX.xml
 E:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\obj\Debug\4A04e10_IMPUTBOX.pdb
+D:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\bin\Debug\4A04e10_IMPUTBOX.exe.config
+D:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\obj\Debug\4A04e10_IMPUTBOX.exe
+D:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\obj\Debug\4A04e10_IMPUTBOX.xml
+D:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\obj\Debug\4A04e10_IMPUTBOX.pdb
+D:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\bin\Debug\4A04e10_IMPUTBOX.exe
+D:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\bin\Debug\4A04e10_IMPUTBOX.pdb
+D:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\bin\Debug\4A04e10_IMPUTBOX.xml
+D:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\obj\Debug\4A04e10_IMPUTBOX.vbprojResolveAssemblyReference.cache
+D:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\obj\Debug\_4A04e10.Form1.resources
+D:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\obj\Debug\_4A04e10.Resources.resources
+D:\Repositorio\VisualStudio\4A04e10_IMPUTBOX\4A04e10_IMPUTBOX\obj\Debug\4A04e10_IMPUTBOX.vbproj.GenerateResource.Cache

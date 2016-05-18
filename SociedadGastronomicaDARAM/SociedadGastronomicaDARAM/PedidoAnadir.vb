@@ -1,24 +1,39 @@
 ﻿Public Class PedidoAnadir
 
-    Dim seleccion As String
+    Dim n As Int16 = 0
+    Dim cantidad As Int16 = 0
+    Dim id As Int16 = 0
+
     Private Sub PedidoAnadir_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'MasterDataSet2.producto' table. You can move, or remove it, as needed.
-        Me.ProductoTableAdapter1.Fill(Me.MasterDataSet2.producto)
-        'TODO: This line of code loads data into the 'MasterDataSet.producto' table. You can move, or remove it, as needed.
-        Me.ProductoTableAdapter.Fill(Me.MasterDataSet.producto)
+        'TODO: This line of code loads data into the 'MasterDataSet5.producto' table. You can move, or remove it, as needed.
+        Me.ProductoTableAdapter.Fill(Me.MasterDataSet5.producto)
 
     End Sub
 
-    Private Sub ButtonAnadir_Click(sender As Object, e As EventArgs) Handles ButtonAnadir.Click
-        ListBox1.Items.Add(seleccion)
-    End Sub
 
     Private Sub ButtonCancelar_Click(sender As Object, e As EventArgs) Handles ButtonCancelar.Click
         Me.Dispose()
     End Sub
 
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
-        seleccion = ComboBox1.Text
-        Dim precio As Int16 = ComboBox1.SelectedValue
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
+
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellEnter
+
+        If n > 1 Then
+
+            cantidad = Convert.ToInt16(InputBox("Introduce la cantidad:", "Cantidad"))
+            id = Convert.ToInt16(DataGridView1.Rows(DataGridView1.CurrentRow.Index).Cells(0).Value.ToString)
+
+
+        Else
+            n = n + 1
+        End If
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim bd As BaseDatos = New BaseDatos
+        bd.restarCantidad(id, cantidad)
     End Sub
 End Class

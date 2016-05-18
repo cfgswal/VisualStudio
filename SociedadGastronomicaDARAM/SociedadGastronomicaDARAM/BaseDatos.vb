@@ -127,6 +127,7 @@ Public Class BaseDatos
         cmd.Parameters.Add("stock_min", SqlDbType.Int).Value = producto.TextBox4.Text
         cmd.Parameters.Add("descripcion", SqlDbType.VarChar, 99).Value = producto.TextBox5.Text
         cmd.CommandType = CommandType.StoredProcedure
+        con.Open()
         cmd.ExecuteNonQuery()
         con.Close()
         MsgBox("Nuevo producto añadido a la base de datos")
@@ -193,19 +194,37 @@ Public Class BaseDatos
         cmd.Parameters.Add("id_pedido", SqlDbType.VarChar, 10).Value = pedido.TextBox1.Text
 
         cmd.Parameters.Add("precio", SqlDbType.Int).Value = pedido.TextBox2.Text
-        cmd.Parameters.Add("importe", SqlDbType.Int).Value = pedido.TextBox3.Text
+        'cmd.Parameters.Add("importe", SqlDbType.Int).Value = pedido.TextBox3.Text
         cmd.Parameters.Add("fecha_pedido", SqlDbType.Date).Value = pedido.DateTimePicker1.Text
 
         cmd.CommandType = CommandType.StoredProcedure
+        con.Open()
         cmd.ExecuteNonQuery()
         con.Close()
         MsgBox("Nuevo pedido añadido a la base de datos")
         pedido.TextBox1.Clear()
         pedido.TextBox2.Clear()
-        pedido.ListBox1.Items.Clear()
+
 
 
         Return True
 
+    End Function
+
+    Public Function restarCantidad(ByRef id As Int16, cantidad As Int16) As Boolean
+
+        ds = RecuperarProductos()
+        Dim cmd As SqlCommand = New SqlCommand("SP_ModificarStock", con)
+        cmd.Parameters.Add("@stock", SqlDbType.Int).Value = cantidad
+        cmd.Parameters.Add("@id_producto", SqlDbType.Int).Value = id
+        cmd.CommandType = CommandType.StoredProcedure
+        con.Open()
+        cmd.ExecuteNonQuery()
+        con.Close()
+
+
+
+
+        Return True
     End Function
 End Class

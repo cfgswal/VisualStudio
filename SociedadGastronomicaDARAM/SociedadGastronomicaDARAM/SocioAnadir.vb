@@ -26,6 +26,7 @@ Public Class SocioAnadir
             PictureBox1.Image = Image.FromFile(OpenFileDialog1.FileName)
             ms = New System.IO.MemoryStream()
             PictureBox1.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg)
+
         End If
     End Sub
 

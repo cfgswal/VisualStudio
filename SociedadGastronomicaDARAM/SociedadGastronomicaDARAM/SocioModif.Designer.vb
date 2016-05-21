@@ -40,6 +40,11 @@ Partial Class SocioModif
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ButtonCancelar
@@ -171,7 +176,7 @@ Partial Class SocioModif
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"id_dni", "nombre_completo"})
+        Me.ComboBox1.Items.AddRange(New Object() {"dni", "nombre_completo"})
         Me.ComboBox1.Location = New System.Drawing.Point(451, 51)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(162, 21)
@@ -193,11 +198,46 @@ Partial Class SocioModif
         Me.Button4.Text = "Buscar socio"
         Me.Button4.UseVisualStyleBackColor = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PictureBox1.Location = New System.Drawing.Point(451, 88)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(162, 197)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 100
+        Me.PictureBox1.TabStop = False
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(451, 306)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(162, 43)
+        Me.Button1.TabIndex = 101
+        Me.Button1.Text = "CAMBIAR"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(451, 366)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(162, 47)
+        Me.Button3.TabIndex = 103
+        Me.Button3.Text = "QUITAR"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
         'SocioModif
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(625, 488)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.TextBox7)
@@ -218,6 +258,7 @@ Partial Class SocioModif
         Me.Controls.Add(Me.TextBox1)
         Me.Name = "SocioModif"
         Me.Text = "SocioModif"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -241,4 +282,8 @@ Partial Class SocioModif
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents TextBox7 As TextBox
     Friend WithEvents Button4 As Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class

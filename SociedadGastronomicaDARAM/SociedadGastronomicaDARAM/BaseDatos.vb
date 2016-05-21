@@ -77,7 +77,7 @@ Public Class BaseDatos
         cmd.Parameters.Add("nombre_completo", SqlDbType.VarChar, 50).Value = socios.TextBox2.Text
         cmd.Parameters.Add("email", SqlDbType.VarChar, 30).Value = socios.TextBox3.Text
         cmd.Parameters.Add("iban", SqlDbType.VarChar, 34).Value = socios.TextBox4.Text
-        'cmd.Parameters.Add("foto", SqlDbType.Image).Value = socios
+        cmd.Parameters.Add("foto", SqlDbType.Image).Value = socios.ms.GetBuffer()
         cmd.Parameters.Add("observaciones", SqlDbType.VarChar, 300).Value = socios.TextBox5.Text
 
         cmd.CommandType = CommandType.StoredProcedure

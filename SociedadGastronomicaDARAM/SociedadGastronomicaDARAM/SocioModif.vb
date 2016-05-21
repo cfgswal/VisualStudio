@@ -3,16 +3,21 @@
     Dim BD As BaseDatos = New BaseDatos
     Dim seleccion As String
     Dim n As Int16
+    Public ms As System.IO.MemoryStream
 
 
     Private Sub ButtonModif_Click(sender As Object, e As EventArgs) Handles ButtonModif.Click
+        PictureBox1.Image = Nothing
 
-        ds.Tables("socios").Rows(0).Item("id_dni") = TextBox1.Text
+        PictureBox1.Image = Image.FromFile(OpenFileDialog1.FileName)
+        ms = New System.IO.MemoryStream()
+        PictureBox1.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg)
+        ds.Tables("socios").Rows(0).Item("dni") = TextBox1.Text
         ds.Tables("socios").Rows(0).Item("nombre_completo") = TextBox2.Text
         ds.Tables("socios").Rows(0).Item("email") = TextBox3.Text
-        ds.Tables("socios").Rows(0).Item("Iban") = TextBox4.Text
-        ' ds.Tables("socios").Rows.Item("foto") = foto
-        ds.Tables("socios").Rows(0).Item("Observaciones") = TextBox5.Text
+        ds.Tables("socios").Rows(0).Item("iban") = TextBox4.Text
+        ds.Tables("socios").Rows(0).Item("foto") = ms.GetBuffer()
+        ds.Tables("socios").Rows(0).Item("observaciones") = TextBox5.Text
         BD.modificarSocio(Me)
     End Sub
 
@@ -43,15 +48,19 @@
                     TextBox3.Enabled = True
                     TextBox4.Enabled = True
                     TextBox5.Enabled = True
-                    n = filas(0).Item("id_socio")
-                    TextBox1.Text = filas(0).Item("id_dni")
+                    Dim imagenbyte() As Byte = filas(0).Item("foto")
+                    ms = New IO.MemoryStream(imagenbyte)
+
+                    PictureBox1.Image = Image.FromStream(ms)
+                    TextBox1.Text = filas(0).Item("dni")
                     TextBox2.Text = filas(0).Item("nombre_completo")
                     TextBox3.Text = filas(0).Item("email")
-                    TextBox4.Text = filas(0).Item("Iban")
-                    TextBox5.Text = filas(0).Item("Observaciones")
+                    TextBox4.Text = filas(0).Item("iban")
+                    TextBox5.Text = filas(0).Item("observaciones")
+
                     filas(0).Delete()
-                Else
-                    MsgBox("Socio no encontrado")
+                    Else
+                        MsgBox("Socio no encontrado")
                 End If
             Else
                 MsgBox("Introduce un valor para buscar")
@@ -71,5 +80,18 @@
 
         seleccion = ComboBox1.SelectedItem.ToString
 
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        PictureBox1.Image = Nothing
+        ms = New System.IO.MemoryStream()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If OpenFileDialog1.ShowDialog() = DialogResult.OK Then
+            PictureBox1.Image = Image.FromFile(OpenFileDialog1.FileName)
+            ms = New System.IO.MemoryStream()
+            PictureBox1.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg)
+        End If
     End Sub
 End Class

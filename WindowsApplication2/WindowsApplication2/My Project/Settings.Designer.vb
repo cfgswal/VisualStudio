@@ -57,11 +57,10 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Initial Catalog=SociedadGastronomicaDARAM;Integrated Securi"& _ 
-            "ty=True")>  _
-        Public ReadOnly Property Conexion() As String
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Initial Catalog=master;Integrated Security=True")>  _
+        Public ReadOnly Property conexion() As String
             Get
-                Return CType(Me("Conexion"),String)
+                Return CType(Me("conexion"),String)
             End Get
         End Property
     End Class
@@ -75,9 +74,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.SociedadGastronomicaDARAM.My.MySettings
+        Friend ReadOnly Property Settings() As Global.WindowsApplication2.My.MySettings
             Get
-                Return Global.SociedadGastronomicaDARAM.My.MySettings.Default
+                Return Global.WindowsApplication2.My.MySettings.Default
             End Get
         End Property
     End Module

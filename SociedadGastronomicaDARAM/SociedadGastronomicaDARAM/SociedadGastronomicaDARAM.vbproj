@@ -118,6 +118,12 @@
     <Compile Include="PedidoListado.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="PedidoResumen.Designer.vb">
+      <DependentUpon>PedidoResumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PedidoResumen.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ProductoAnadir.Designer.vb">
       <DependentUpon>ProductoAnadir.vb</DependentUpon>
     </Compile>
@@ -147,6 +153,11 @@
     </Compile>
     <Compile Include="ReporteConsultar.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SociedadGastronomicaDARAMDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SociedadGastronomicaDARAMDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="SocioAnadir.Designer.vb">
       <DependentUpon>SocioAnadir.vb</DependentUpon>
@@ -179,6 +190,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PedidoAnadir.resx">
       <DependentUpon>PedidoAnadir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidoListado.resx">
+      <DependentUpon>PedidoListado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidoResumen.resx">
+      <DependentUpon>PedidoResumen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductoAnadir.resx">
       <DependentUpon>ProductoAnadir.vb</DependentUpon>
@@ -221,6 +238,17 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="SociedadGastronomicaDARAMDataSet.xsc">
+      <DependentUpon>SociedadGastronomicaDARAMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SociedadGastronomicaDARAMDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SociedadGastronomicaDARAMDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SociedadGastronomicaDARAMDataSet.xss">
+      <DependentUpon>SociedadGastronomicaDARAMDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

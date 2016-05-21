@@ -36,6 +36,11 @@ Partial Class SocioAnadir
         Me.Label5 = New System.Windows.Forms.Label()
         Me.ButtonAnadir = New System.Windows.Forms.Button()
         Me.ButtonCancelar = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.Button2 = New System.Windows.Forms.Button()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TextBox1
@@ -155,11 +160,46 @@ Partial Class SocioAnadir
         Me.ButtonCancelar.Text = "CANCELAR"
         Me.ButtonCancelar.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(17, 386)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(58, 23)
+        Me.Button1.TabIndex = 82
+        Me.Button1.Text = "AÑADIR FOTO"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PictureBox1.Location = New System.Drawing.Point(17, 252)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(103, 128)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 83
+        Me.PictureBox1.TabStop = False
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(91, 385)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 84
+        Me.Button2.Text = "QUITAR"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'SocioAnadir
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(508, 422)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ButtonCancelar)
         Me.Controls.Add(Me.ButtonAnadir)
         Me.Controls.Add(Me.Label9)
@@ -176,6 +216,7 @@ Partial Class SocioAnadir
         Me.Controls.Add(Me.TextBox1)
         Me.Name = "SocioAnadir"
         Me.Text = "SocioAnadir"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -195,4 +236,8 @@ Partial Class SocioAnadir
     Friend WithEvents Label5 As Label
     Friend WithEvents ButtonAnadir As Button
     Friend WithEvents ButtonCancelar As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents Button2 As Button
 End Class

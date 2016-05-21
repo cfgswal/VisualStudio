@@ -22,8 +22,42 @@ Partial Class PedidoListado
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.DataGridViewResumen = New System.Windows.Forms.DataGridView()
+        Me.Button1 = New System.Windows.Forms.Button()
+        CType(Me.DataGridViewResumen, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'DataGridViewResumen
+        '
+        Me.DataGridViewResumen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridViewResumen.Location = New System.Drawing.Point(58, 41)
+        Me.DataGridViewResumen.Name = "DataGridViewResumen"
+        Me.DataGridViewResumen.Size = New System.Drawing.Size(636, 386)
+        Me.DataGridViewResumen.TabIndex = 0
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(58, 451)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(636, 54)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "CONFIRMAR PEDIDO"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'PedidoListado
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Text = "PeididoListado"
+        Me.ClientSize = New System.Drawing.Size(770, 561)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.DataGridViewResumen)
+        Me.Name = "PedidoListado"
+        Me.Text = "PedidoListado"
+        CType(Me.DataGridViewResumen, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+
     End Sub
+
+    Friend WithEvents DataGridViewResumen As DataGridView
+    Friend WithEvents Button1 As Button
 End Class

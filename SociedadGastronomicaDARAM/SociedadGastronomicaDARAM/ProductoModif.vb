@@ -20,7 +20,7 @@
         ds.Tables("producto").Rows(0).Item("stock") = TextBox3.Text
         ds.Tables("producto").Rows(0).Item("stock_min") = TextBox4.Text
         ds.Tables("producto").Rows(0).Item("descripcion") = TextBox5.Text
-        BD.modificarProducto(Me, ds, n)
+        BD.modificarProducto(Me, ds)
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click

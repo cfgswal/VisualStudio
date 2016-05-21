@@ -27,12 +27,12 @@ Public Class BaseDatos
     End Function
 
     Public Function RecuperarProductos()
-        Dim sql As String = "SELECT * FROM producto"
+        Dim sql As String = "SELECT * FROM productos"
         Dim cmd As New SqlCommand(sql, con)
 
         Try
             da = New SqlDataAdapter(cmd)
-            da.Fill(ds, "producto")
+            da.Fill(ds, "productos")
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
@@ -44,12 +44,12 @@ Public Class BaseDatos
     Public Function insertarSocio(ByRef socios As SocioAnadir) As Boolean
         Try
             Dim cmd As SqlCommand = New SqlCommand("SP_REGISTRAR_SOCIO", con)
-            cmd.Parameters.Add("id_dni", SqlDbType.VarChar, 10).Value = socios.TextBox1.Text
-            cmd.Parameters.Add("nombre_completo", SqlDbType.VarChar, 20).Value = socios.TextBox2.Text
-            cmd.Parameters.Add("email", SqlDbType.VarChar, 20).Value = socios.TextBox3.Text
-            cmd.Parameters.Add("Iban", SqlDbType.VarChar, 20).Value = socios.TextBox4.Text
-            cmd.Parameters.Add("foto", SqlDbType.VarChar, 99).Value = "dfgdf"
-            cmd.Parameters.Add("Observaciones", SqlDbType.VarChar, 99).Value = socios.TextBox5.Text
+            cmd.Parameters.Add("dni", SqlDbType.VarChar, 9).Value = socios.TextBox1.Text
+            cmd.Parameters.Add("nombre_completo", SqlDbType.VarChar, 50).Value = socios.TextBox2.Text
+            cmd.Parameters.Add("email", SqlDbType.VarChar, 30).Value = socios.TextBox3.Text
+            cmd.Parameters.Add("iban", SqlDbType.VarChar, 34).Value = socios.TextBox4.Text
+            cmd.Parameters.Add("foto", SqlDbType.Image).Value = socios.ms.GetBuffer()
+            cmd.Parameters.Add("observaciones", SqlDbType.VarChar, 300).Value = socios.TextBox5.Text
             cmd.CommandType = CommandType.StoredProcedure
             con.Open()
             cmd.ExecuteNonQuery()
@@ -60,6 +60,8 @@ Public Class BaseDatos
             socios.TextBox3.Clear()
             socios.TextBox4.Clear()
             socios.TextBox5.Clear()
+            socios.PictureBox1.Image = Nothing
+
         Catch ex As SqlException
             MsgBox("El DNI introducido ya existe")
         End Try
@@ -69,15 +71,14 @@ Public Class BaseDatos
     End Function
 
 
-    Public Function modificarSocio(ByRef socios As SocioModif, ByRef ds As DataSet, ByRef n As Int16) As Boolean
+    Public Function modificarSocio(ByRef socios As SocioModif) As Boolean
         Dim cmd As New SqlCommand("SP_MODIFICAR_SOCIO", con)
-        cmd.Parameters.Add("id_socio", SqlDbType.Int).Value = n
-        cmd.Parameters.Add("id_dni", SqlDbType.VarChar, 10).Value = socios.TextBox1.Text
-        cmd.Parameters.Add("nombre_completo", SqlDbType.VarChar, 20).Value = socios.TextBox2.Text
-        cmd.Parameters.Add("email", SqlDbType.VarChar, 20).Value = socios.TextBox3.Text
-        cmd.Parameters.Add("Iban", SqlDbType.VarChar, 20).Value = socios.TextBox4.Text
-        cmd.Parameters.Add("foto", SqlDbType.VarChar, 99).Value = ds.Tables("socios").Rows(0).Item("foto")
-        cmd.Parameters.Add("Observaciones", SqlDbType.VarChar, 99).Value = socios.TextBox5.Text
+        cmd.Parameters.Add("dni", SqlDbType.VarChar, 9).Value = socios.TextBox1.Text
+        cmd.Parameters.Add("nombre_completo", SqlDbType.VarChar, 50).Value = socios.TextBox2.Text
+        cmd.Parameters.Add("email", SqlDbType.VarChar, 30).Value = socios.TextBox3.Text
+        cmd.Parameters.Add("iban", SqlDbType.VarChar, 34).Value = socios.TextBox4.Text
+        'cmd.Parameters.Add("foto", SqlDbType.Image).Value = socios
+        cmd.Parameters.Add("observaciones", SqlDbType.VarChar, 300).Value = socios.TextBox5.Text
 
         cmd.CommandType = CommandType.StoredProcedure
 
@@ -97,7 +98,7 @@ Public Class BaseDatos
         Dim cmd As New SqlCommand("SP_ELIMINAR_SOCIO", con)
 
 
-        cmd.Parameters.Add("id_dni", SqlDbType.VarChar, 10).Value = socios.TextBox1.Text
+        cmd.Parameters.Add("dni", SqlDbType.VarChar, 9).Value = socios.TextBox1.Text
 
 
         cmd.CommandType = CommandType.StoredProcedure
@@ -120,12 +121,12 @@ Public Class BaseDatos
     Public Function insertarProducto(ByRef producto As ProductoAnadir) As Boolean
 
         Dim cmd As SqlCommand = New SqlCommand("SP_REGISTRAR_PRODUCTO", con)
-        cmd.Parameters.Add("Codigo_producto", SqlDbType.VarChar, 10).Value = producto.TextBox1.Text
-        cmd.Parameters.Add("nombre", SqlDbType.VarChar, 20).Value = producto.TextBox6.Text
-        cmd.Parameters.Add("precio", SqlDbType.Int).Value = producto.TextBox2.Text
+        cmd.Parameters.Add("cod_producto", SqlDbType.Int).Value = producto.TextBox1.Text
+        cmd.Parameters.Add("nombre", SqlDbType.VarChar, 30).Value = producto.TextBox6.Text
+        cmd.Parameters.Add("precio", SqlDbType.Float).Value = producto.TextBox2.Text
         cmd.Parameters.Add("stock", SqlDbType.Int).Value = producto.TextBox3.Text
         cmd.Parameters.Add("stock_min", SqlDbType.Int).Value = producto.TextBox4.Text
-        cmd.Parameters.Add("descripcion", SqlDbType.VarChar, 99).Value = producto.TextBox5.Text
+        cmd.Parameters.Add("descripcion", SqlDbType.VarChar, 100).Value = producto.TextBox5.Text
         cmd.CommandType = CommandType.StoredProcedure
         con.Open()
         cmd.ExecuteNonQuery()
@@ -143,15 +144,14 @@ Public Class BaseDatos
 
     End Function
 
-    Public Function modificarProducto(ByRef producto As ProductoModif, ByRef ds As DataSet, ByRef n As Int16) As Boolean
+    Public Function modificarProducto(ByRef producto As ProductoModif, ByRef ds As DataSet) As Boolean
         Dim cmd As New SqlCommand("SP_MODIFICAR_PRODUCTO", con)
-        cmd.Parameters.Add("id_producto", SqlDbType.Int).Value = n
-        cmd.Parameters.Add("Codigo_producto", SqlDbType.VarChar, 10).Value = producto.TextBox1.Text
-        cmd.Parameters.Add("nombre", SqlDbType.VarChar, 20).Value = producto.TextBox6.Text
-        cmd.Parameters.Add("precio", SqlDbType.VarChar, 20).Value = producto.TextBox2.Text
-        cmd.Parameters.Add("stock", SqlDbType.VarChar, 20).Value = producto.TextBox3.Text
-        cmd.Parameters.Add("stock_min", SqlDbType.VarChar, 99).Value = producto.TextBox4.Text
-        cmd.Parameters.Add("descripcion", SqlDbType.VarChar, 99).Value = producto.TextBox5.Text
+        cmd.Parameters.Add("cod_producto", SqlDbType.Int).Value = producto.TextBox1.Text
+        cmd.Parameters.Add("nombre", SqlDbType.VarChar, 30).Value = producto.TextBox6.Text
+        cmd.Parameters.Add("precio", SqlDbType.Float).Value = producto.TextBox2.Text
+        cmd.Parameters.Add("stock", SqlDbType.Int).Value = producto.TextBox3.Text
+        cmd.Parameters.Add("stock_min", SqlDbType.Int).Value = producto.TextBox4.Text
+        cmd.Parameters.Add("descripcion", SqlDbType.VarChar, 100).Value = producto.TextBox5.Text
 
         cmd.CommandType = CommandType.StoredProcedure
 
@@ -171,7 +171,7 @@ Public Class BaseDatos
     Public Function EliminarProducto(ByRef producto As ProductoEliminar, ByRef n As Int16) As Boolean
 
         Dim cmd As New SqlCommand("SP_ELIMINAR_PRODUCTO", con)
-        cmd.Parameters.Add("id_producto", SqlDbType.VarChar, 10).Value = n
+        cmd.Parameters.Add("cod_producto", SqlDbType.Int).Value = n
         cmd.CommandType = CommandType.StoredProcedure
         con.Open()
         cmd.ExecuteNonQuery()
@@ -191,10 +191,8 @@ Public Class BaseDatos
     Public Function insertarPedido(ByRef pedido As PedidoAnadir) As Boolean
 
         Dim cmd As SqlCommand = New SqlCommand("SP_REGISTRAR_PEDIDO", con)
-        cmd.Parameters.Add("id_pedido", SqlDbType.VarChar, 10).Value = pedido.TextBox1.Text
-
-        cmd.Parameters.Add("precio", SqlDbType.Int).Value = pedido.TextBox2.Text
-        'cmd.Parameters.Add("importe", SqlDbType.Int).Value = pedido.TextBox3.Text
+        cmd.Parameters.Add("dni", SqlDbType.VarChar, 9).Value = pedido.TextBox1.Text
+        cmd.Parameters.Add("importe", SqlDbType.Float).Value = pedido.TextBox2.Text
         cmd.Parameters.Add("fecha_pedido", SqlDbType.Date).Value = pedido.DateTimePicker1.Text
 
         cmd.CommandType = CommandType.StoredProcedure
@@ -216,7 +214,7 @@ Public Class BaseDatos
         ds = RecuperarProductos()
         Dim cmd As SqlCommand = New SqlCommand("SP_ModificarStock", con)
         cmd.Parameters.Add("@stock", SqlDbType.Int).Value = cantidad
-        cmd.Parameters.Add("@id_producto", SqlDbType.Int).Value = id
+        cmd.Parameters.Add("@cod_producto", SqlDbType.Int).Value = id
         cmd.CommandType = CommandType.StoredProcedure
         con.Open()
         cmd.ExecuteNonQuery()

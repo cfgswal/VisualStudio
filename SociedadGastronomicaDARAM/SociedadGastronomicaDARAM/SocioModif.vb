@@ -13,7 +13,7 @@
         ds.Tables("socios").Rows(0).Item("Iban") = TextBox4.Text
         ' ds.Tables("socios").Rows.Item("foto") = foto
         ds.Tables("socios").Rows(0).Item("Observaciones") = TextBox5.Text
-        BD.modificarSocio(Me, ds, n)
+        BD.modificarSocio(Me)
     End Sub
 
     Private Sub SocioModif_Load(sender As Object, e As EventArgs) Handles MyBase.Load

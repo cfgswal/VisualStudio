@@ -33,20 +33,22 @@ Partial Class PedidoAnadir
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.IdproductoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CodigoproductoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ProductosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.SociedadGastronomicaDARAMDataSet = New SociedadGastronomicaDARAM.SociedadGastronomicaDARAMDataSet()
+        Me.ProductoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ProductoTableAdapter = New SociedadGastronomicaDARAM.masterDataSet5TableAdapters.productoTableAdapter()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.ProductosTableAdapter = New SociedadGastronomicaDARAM.SociedadGastronomicaDARAMDataSetTableAdapters.productosTableAdapter()
         Me.NombreDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DescripcionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PrecioDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.StockDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.StockminDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ProductoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.MasterDataSet5 = New SociedadGastronomicaDARAM.masterDataSet5()
-        Me.ProductoTableAdapter = New SociedadGastronomicaDARAM.masterDataSet5TableAdapters.productoTableAdapter()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Cantidad_Gastada = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ProductosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SociedadGastronomicaDARAMDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MasterDataSet5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label5
@@ -134,66 +136,24 @@ Partial Class PedidoAnadir
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.AllowUserToOrderColumns = True
         Me.DataGridView1.AutoGenerateColumns = False
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdproductoDataGridViewTextBoxColumn, Me.CodigoproductoDataGridViewTextBoxColumn, Me.NombreDataGridViewTextBoxColumn, Me.DescripcionDataGridViewTextBoxColumn, Me.PrecioDataGridViewTextBoxColumn, Me.StockDataGridViewTextBoxColumn, Me.StockminDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.ProductoBindingSource
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NombreDataGridViewTextBoxColumn, Me.DescripcionDataGridViewTextBoxColumn, Me.PrecioDataGridViewTextBoxColumn, Me.Cantidad_Gastada})
+        Me.DataGridView1.DataSource = Me.ProductosBindingSource
         Me.DataGridView1.Location = New System.Drawing.Point(17, 189)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(743, 437)
         Me.DataGridView1.TabIndex = 155
         '
-        'IdproductoDataGridViewTextBoxColumn
+        'ProductosBindingSource
         '
-        Me.IdproductoDataGridViewTextBoxColumn.DataPropertyName = "id_producto"
-        Me.IdproductoDataGridViewTextBoxColumn.HeaderText = "id_producto"
-        Me.IdproductoDataGridViewTextBoxColumn.Name = "IdproductoDataGridViewTextBoxColumn"
-        Me.IdproductoDataGridViewTextBoxColumn.ReadOnly = True
+        Me.ProductosBindingSource.DataMember = "productos"
+        Me.ProductosBindingSource.DataSource = Me.SociedadGastronomicaDARAMDataSet
         '
-        'CodigoproductoDataGridViewTextBoxColumn
+        'SociedadGastronomicaDARAMDataSet
         '
-        Me.CodigoproductoDataGridViewTextBoxColumn.DataPropertyName = "Codigo_producto"
-        Me.CodigoproductoDataGridViewTextBoxColumn.HeaderText = "Codigo_producto"
-        Me.CodigoproductoDataGridViewTextBoxColumn.Name = "CodigoproductoDataGridViewTextBoxColumn"
-        '
-        'NombreDataGridViewTextBoxColumn
-        '
-        Me.NombreDataGridViewTextBoxColumn.DataPropertyName = "nombre"
-        Me.NombreDataGridViewTextBoxColumn.HeaderText = "nombre"
-        Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
-        '
-        'DescripcionDataGridViewTextBoxColumn
-        '
-        Me.DescripcionDataGridViewTextBoxColumn.DataPropertyName = "descripcion"
-        Me.DescripcionDataGridViewTextBoxColumn.HeaderText = "descripcion"
-        Me.DescripcionDataGridViewTextBoxColumn.Name = "DescripcionDataGridViewTextBoxColumn"
-        '
-        'PrecioDataGridViewTextBoxColumn
-        '
-        Me.PrecioDataGridViewTextBoxColumn.DataPropertyName = "precio"
-        Me.PrecioDataGridViewTextBoxColumn.HeaderText = "precio"
-        Me.PrecioDataGridViewTextBoxColumn.Name = "PrecioDataGridViewTextBoxColumn"
-        '
-        'StockDataGridViewTextBoxColumn
-        '
-        Me.StockDataGridViewTextBoxColumn.DataPropertyName = "stock"
-        Me.StockDataGridViewTextBoxColumn.HeaderText = "stock"
-        Me.StockDataGridViewTextBoxColumn.Name = "StockDataGridViewTextBoxColumn"
-        '
-        'StockminDataGridViewTextBoxColumn
-        '
-        Me.StockminDataGridViewTextBoxColumn.DataPropertyName = "stock_min"
-        Me.StockminDataGridViewTextBoxColumn.HeaderText = "stock_min"
-        Me.StockminDataGridViewTextBoxColumn.Name = "StockminDataGridViewTextBoxColumn"
-        '
-        'ProductoBindingSource
-        '
-        Me.ProductoBindingSource.DataMember = "producto"
-        Me.ProductoBindingSource.DataSource = Me.MasterDataSet5
-        '
-        'MasterDataSet5
-        '
-        Me.MasterDataSet5.DataSetName = "masterDataSet5"
-        Me.MasterDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.SociedadGastronomicaDARAMDataSet.DataSetName = "SociedadGastronomicaDARAMDataSet"
+        Me.SociedadGastronomicaDARAMDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'ProductoTableAdapter
         '
@@ -206,11 +166,61 @@ Partial Class PedidoAnadir
         Me.TextBox2.Size = New System.Drawing.Size(96, 20)
         Me.TextBox2.TabIndex = 156
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(610, 157)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(92, 20)
+        Me.Label2.TabIndex = 157
+        Me.Label2.Text = "PEDIDO Nº"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(717, 157)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.ReadOnly = True
+        Me.TextBox3.Size = New System.Drawing.Size(43, 20)
+        Me.TextBox3.TabIndex = 158
+        '
+        'ProductosTableAdapter
+        '
+        Me.ProductosTableAdapter.ClearBeforeFill = True
+        '
+        'NombreDataGridViewTextBoxColumn
+        '
+        Me.NombreDataGridViewTextBoxColumn.DataPropertyName = "nombre"
+        Me.NombreDataGridViewTextBoxColumn.HeaderText = "nombre"
+        Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
+        Me.NombreDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'DescripcionDataGridViewTextBoxColumn
+        '
+        Me.DescripcionDataGridViewTextBoxColumn.DataPropertyName = "descripcion"
+        Me.DescripcionDataGridViewTextBoxColumn.HeaderText = "descripcion"
+        Me.DescripcionDataGridViewTextBoxColumn.Name = "DescripcionDataGridViewTextBoxColumn"
+        Me.DescripcionDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'PrecioDataGridViewTextBoxColumn
+        '
+        Me.PrecioDataGridViewTextBoxColumn.DataPropertyName = "precio"
+        Me.PrecioDataGridViewTextBoxColumn.HeaderText = "precio"
+        Me.PrecioDataGridViewTextBoxColumn.Name = "PrecioDataGridViewTextBoxColumn"
+        Me.PrecioDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'Cantidad_Gastada
+        '
+        Me.Cantidad_Gastada.HeaderText = "Cantidad Gastada"
+        Me.Cantidad_Gastada.Name = "Cantidad_Gastada"
+        '
         'PedidoAnadir
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(787, 685)
+        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label4)
@@ -225,8 +235,9 @@ Partial Class PedidoAnadir
         Me.Name = "PedidoAnadir"
         Me.Text = "PedidoAnadir"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ProductosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SociedadGastronomicaDARAMDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MasterDataSet5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -241,15 +252,16 @@ Partial Class PedidoAnadir
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents MasterDataSet5 As masterDataSet5
     Friend WithEvents ProductoBindingSource As BindingSource
     Friend WithEvents ProductoTableAdapter As masterDataSet5TableAdapters.productoTableAdapter
     Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents IdproductoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents CodigoproductoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents Label2 As Label
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents SociedadGastronomicaDARAMDataSet As SociedadGastronomicaDARAMDataSet
+    Friend WithEvents ProductosBindingSource As BindingSource
+    Friend WithEvents ProductosTableAdapter As SociedadGastronomicaDARAMDataSetTableAdapters.productosTableAdapter
     Friend WithEvents NombreDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents DescripcionDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents PrecioDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents StockDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents StockminDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents Cantidad_Gastada As DataGridViewTextBoxColumn
 End Class

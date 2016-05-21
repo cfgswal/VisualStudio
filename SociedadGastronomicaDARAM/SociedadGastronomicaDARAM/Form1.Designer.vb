@@ -46,7 +46,7 @@ Partial Class Form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SOCIOSToolStripMenuItem, Me.PRODUCTOSToolStripMenuItem, Me.PEDIDOSToolStripMenuItem, Me.REPORTESToolStripMenuItem, Me.ACERCADEToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(918, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1024, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -60,19 +60,19 @@ Partial Class Form1
         'AÑADIRToolStripMenuItem
         '
         Me.AÑADIRToolStripMenuItem.Name = "AÑADIRToolStripMenuItem"
-        Me.AÑADIRToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AÑADIRToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.AÑADIRToolStripMenuItem.Text = "AÑADIR"
         '
         'MODIFICARToolStripMenuItem
         '
         Me.MODIFICARToolStripMenuItem.Name = "MODIFICARToolStripMenuItem"
-        Me.MODIFICARToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.MODIFICARToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.MODIFICARToolStripMenuItem.Text = "MODIFICAR"
         '
         'ELIMINARToolStripMenuItem
         '
         Me.ELIMINARToolStripMenuItem.Name = "ELIMINARToolStripMenuItem"
-        Me.ELIMINARToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ELIMINARToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.ELIMINARToolStripMenuItem.Text = "ELIMINAR"
         '
         'PRODUCTOSToolStripMenuItem
@@ -85,19 +85,19 @@ Partial Class Form1
         'AÑADIRToolStripMenuItem1
         '
         Me.AÑADIRToolStripMenuItem1.Name = "AÑADIRToolStripMenuItem1"
-        Me.AÑADIRToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.AÑADIRToolStripMenuItem1.Size = New System.Drawing.Size(137, 22)
         Me.AÑADIRToolStripMenuItem1.Text = "AÑADIR"
         '
         'MODIFICARToolStripMenuItem1
         '
         Me.MODIFICARToolStripMenuItem1.Name = "MODIFICARToolStripMenuItem1"
-        Me.MODIFICARToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.MODIFICARToolStripMenuItem1.Size = New System.Drawing.Size(137, 22)
         Me.MODIFICARToolStripMenuItem1.Text = "MODIFICAR"
         '
         'ELIMINARToolStripMenuItem1
         '
         Me.ELIMINARToolStripMenuItem1.Name = "ELIMINARToolStripMenuItem1"
-        Me.ELIMINARToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ELIMINARToolStripMenuItem1.Size = New System.Drawing.Size(137, 22)
         Me.ELIMINARToolStripMenuItem1.Text = "ELIMINAR"
         '
         'PEDIDOSToolStripMenuItem
@@ -110,13 +110,13 @@ Partial Class Form1
         'AÑADIRToolStripMenuItem2
         '
         Me.AÑADIRToolStripMenuItem2.Name = "AÑADIRToolStripMenuItem2"
-        Me.AÑADIRToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
+        Me.AÑADIRToolStripMenuItem2.Size = New System.Drawing.Size(121, 22)
         Me.AÑADIRToolStripMenuItem2.Text = "AÑADIR"
         '
         'LISTADOToolStripMenuItem
         '
         Me.LISTADOToolStripMenuItem.Name = "LISTADOToolStripMenuItem"
-        Me.LISTADOToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.LISTADOToolStripMenuItem.Size = New System.Drawing.Size(121, 22)
         Me.LISTADOToolStripMenuItem.Text = "LISTADO"
         '
         'REPORTESToolStripMenuItem
@@ -129,13 +129,13 @@ Partial Class Form1
         'AÑADIRToolStripMenuItem3
         '
         Me.AÑADIRToolStripMenuItem3.Name = "AÑADIRToolStripMenuItem3"
-        Me.AÑADIRToolStripMenuItem3.Size = New System.Drawing.Size(152, 22)
+        Me.AÑADIRToolStripMenuItem3.Size = New System.Drawing.Size(142, 22)
         Me.AÑADIRToolStripMenuItem3.Text = "AÑADIR"
         '
         'CONSULTARToolStripMenuItem
         '
         Me.CONSULTARToolStripMenuItem.Name = "CONSULTARToolStripMenuItem"
-        Me.CONSULTARToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CONSULTARToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
         Me.CONSULTARToolStripMenuItem.Text = "CONSULTAR"
         '
         'ACERCADEToolStripMenuItem
@@ -148,7 +148,8 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(918, 625)
+        Me.BackgroundImage = Global.SociedadGastronomicaDARAM.My.Resources.Resources.Doc1
+        Me.ClientSize = New System.Drawing.Size(1024, 710)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"

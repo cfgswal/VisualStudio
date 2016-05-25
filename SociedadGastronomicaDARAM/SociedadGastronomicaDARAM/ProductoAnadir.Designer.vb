@@ -29,12 +29,10 @@ Partial Class ProductoAnadir
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
@@ -103,15 +101,6 @@ Partial Class ProductoAnadir
         Me.Label2.TabIndex = 89
         Me.Label2.Text = "Precio"
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(88, 51)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(102, 13)
-        Me.Label5.TabIndex = 88
-        Me.Label5.Text = "Código del producto"
-        '
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(230, 257)
@@ -140,13 +129,6 @@ Partial Class ProductoAnadir
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(266, 20)
         Me.TextBox2.TabIndex = 83
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(230, 48)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(266, 20)
-        Me.TextBox1.TabIndex = 82
         '
         'Label7
         '
@@ -178,12 +160,10 @@ Partial Class ProductoAnadir
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
         Me.Name = "ProductoAnadir"
         Me.Text = "ProductoAnadir"
         Me.ResumeLayout(False)
@@ -198,12 +178,10 @@ Partial Class ProductoAnadir
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label5 As Label
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents TextBox6 As TextBox
 End Class

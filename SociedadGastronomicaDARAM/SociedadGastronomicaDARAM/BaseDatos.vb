@@ -41,6 +41,22 @@ Public Class BaseDatos
 
     End Function
 
+    Public Function RecuperarPedidos()
+        Dim sql As String = "SELECT * FROM pedidos"
+        Dim cmd As New SqlCommand(sql, con)
+
+        Try
+            da = New SqlDataAdapter(cmd)
+            da.Fill(ds, "pedidos")
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+        Return ds
+
+    End Function
+
+
     Public Function insertarSocio(ByRef socios As SocioAnadir) As Boolean
         Try
             Dim cmd As SqlCommand = New SqlCommand("SP_REGISTRAR_SOCIO", con)
@@ -121,7 +137,6 @@ Public Class BaseDatos
     Public Function insertarProducto(ByRef producto As ProductoAnadir) As Boolean
 
         Dim cmd As SqlCommand = New SqlCommand("SP_REGISTRAR_PRODUCTO", con)
-        cmd.Parameters.Add("cod_producto", SqlDbType.Int).Value = producto.TextBox1.Text
         cmd.Parameters.Add("nombre", SqlDbType.VarChar, 30).Value = producto.TextBox6.Text
         cmd.Parameters.Add("precio", SqlDbType.Float).Value = producto.TextBox2.Text
         cmd.Parameters.Add("stock", SqlDbType.Int).Value = producto.TextBox3.Text
@@ -132,7 +147,7 @@ Public Class BaseDatos
         cmd.ExecuteNonQuery()
         con.Close()
         MsgBox("Nuevo producto añadido a la base de datos")
-        producto.TextBox1.Clear()
+
         producto.TextBox2.Clear()
         producto.TextBox3.Clear()
         producto.TextBox4.Clear()
@@ -168,10 +183,10 @@ Public Class BaseDatos
 
     End Function
 
-    Public Function EliminarProducto(ByRef producto As ProductoEliminar, ByRef n As Int16) As Boolean
+    Public Function EliminarProducto(ByRef producto As ProductoEliminar) As Boolean
 
         Dim cmd As New SqlCommand("SP_ELIMINAR_PRODUCTO", con)
-        cmd.Parameters.Add("cod_producto", SqlDbType.Int).Value = n
+        cmd.Parameters.Add("cod_producto", SqlDbType.Int).Value = Convert.ToInt32(producto.TextBox1.Text)
         cmd.CommandType = CommandType.StoredProcedure
         con.Open()
         cmd.ExecuteNonQuery()
@@ -183,31 +198,24 @@ Public Class BaseDatos
         producto.TextBox4.Clear()
         producto.TextBox5.Clear()
         producto.TextBox6.Clear()
-        producto.Dispose()
+        producto.TextBox7.Clear()
         Return True
 
     End Function
 
-    Public Function insertarPedido(ByRef pedido As PedidoAnadir) As Boolean
-
-        Dim cmd As SqlCommand = New SqlCommand("SP_REGISTRAR_PEDIDO", con)
-        cmd.Parameters.Add("dni", SqlDbType.VarChar, 9).Value = pedido.TextBox1.Text
-        cmd.Parameters.Add("importe", SqlDbType.Float).Value = pedido.TextBox2.Text
-        cmd.Parameters.Add("fecha_pedido", SqlDbType.Date).Value = pedido.DateTimePicker1.Text
-
+    Public Function insertarpedido(ByRef dni As String, ByRef fecha As Date, ByRef total As String) As Boolean
+        Dim cmd As New SqlCommand("SP_INSERTAR_PEDIDO", con)
+        cmd.Parameters.Add("dni", SqlDbType.VarChar, 9).Value = dni
+        cmd.Parameters.Add("fecha_pedido", SqlDbType.Date).Value = fecha
+        cmd.Parameters.Add("importe", SqlDbType.Float).Value = total
         cmd.CommandType = CommandType.StoredProcedure
         con.Open()
         cmd.ExecuteNonQuery()
         con.Close()
-        MsgBox("Nuevo pedido añadido a la base de datos")
-        pedido.TextBox1.Clear()
-        pedido.TextBox2.Clear()
-
-
-
+        MsgBox("PEDIDO INSERTADO")
         Return True
-
     End Function
+
 
     Public Function restarCantidad(ByRef id As Int16, cantidad As Int16) As Boolean
 
@@ -219,9 +227,6 @@ Public Class BaseDatos
         con.Open()
         cmd.ExecuteNonQuery()
         con.Close()
-
-
-
 
         Return True
     End Function

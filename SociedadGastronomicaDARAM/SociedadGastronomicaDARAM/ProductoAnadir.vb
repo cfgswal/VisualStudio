@@ -8,4 +8,8 @@
         Dim BD As BaseDatos = New BaseDatos
         BD.insertarProducto(Me)
     End Sub
+
+    Private Sub ProductoAnadir_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

@@ -110,7 +110,7 @@ Partial Class ProductoEliminar
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Codigo_producto", "nombre"})
+        Me.ComboBox1.Items.AddRange(New Object() {"cod_producto", "nombre"})
         Me.ComboBox1.Location = New System.Drawing.Point(445, 51)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(162, 21)

@@ -14,12 +14,12 @@
     End Sub
 
     Private Sub ButtonModif_Click(sender As Object, e As EventArgs) Handles ButtonModif.Click
-        ds.Tables("producto").Rows(0).Item("Codigo_producto") = TextBox1.Text
-        ds.Tables("producto").Rows(0).Item("nombre") = TextBox6.Text
-        ds.Tables("producto").Rows(0).Item("precio") = TextBox2.Text
-        ds.Tables("producto").Rows(0).Item("stock") = TextBox3.Text
-        ds.Tables("producto").Rows(0).Item("stock_min") = TextBox4.Text
-        ds.Tables("producto").Rows(0).Item("descripcion") = TextBox5.Text
+
+        ds.Tables("productos").Rows(0).Item("nombre") = TextBox6.Text
+        ds.Tables("productos").Rows(0).Item("precio") = TextBox2.Text
+        ds.Tables("productos").Rows(0).Item("stock") = TextBox3.Text
+        ds.Tables("productos").Rows(0).Item("stock_min") = TextBox4.Text
+        ds.Tables("productos").Rows(0).Item("descripcion") = TextBox5.Text
         BD.modificarProducto(Me, ds)
     End Sub
 
@@ -33,7 +33,7 @@
         Do
             If seleccion IsNot Nothing Then
 
-                Dim filas() As DataRow = ds.Tables("producto").Select(seleccion & "='" + registro + "'")
+                Dim filas() As DataRow = ds.Tables("productos").Select(seleccion & "='" + registro + "'")
                 If filas.Length > 0 Then
                     TextBox1.Enabled = True
                     TextBox2.Enabled = True
@@ -41,8 +41,8 @@
                     TextBox4.Enabled = True
                     TextBox5.Enabled = True
                     TextBox6.Enabled = True
-                    n = filas(0).Item("id_producto")
-                    TextBox1.Text = filas(0).Item("Codigo_producto")
+
+                    TextBox1.Text = filas(0).Item("cod_producto")
                     TextBox6.Text = filas(0).Item("nombre")
                     TextBox2.Text = filas(0).Item("precio")
                     TextBox3.Text = filas(0).Item("stock")
